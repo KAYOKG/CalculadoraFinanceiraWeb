@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --color-background: #1d2939;
+  --color-text: #C8C8C8;
+  --color-hover: #ffffff;
+  --color-off: #b7b7b7;
+
+  --font-Primary: 'Courier New';
+}
+body{
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-Primary);
+  /*overflow: hidden;*/
+}
+
+/* CSS DO HEADER */
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100vh;
+}
+header ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+header li a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+header li a:hover{
+  color: var(--color-hover);
+  text-shadow: 0px 0px 1px white;
+}
+/* CSS DO HEADER */
+
+/* CSS DA SECTION JUROS SIMPLES */
+#jurosSimples {
+  padding: 20px;
+  border: 2px solid var(--color-off);
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 150vh;
+}
+
+#jurosSimples fieldset {
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#jurosSimples legend {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+#jurosSimples h2 {
+  font-size: 24px;
+}
+
+#jurosSimples form {
+  gap: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#jurosSimples label {
+  font-weight: bold;
+}
+
+.emCima{
+  display: flex;
+  gap: 45px;
+}
+
+.subDivTaxa{
+  display: flex;
+  gap: 5px;
+}
+
+#CAPITAL{
+  width: 100px;
+}
+
+#jurosSimples input[id="taxa"]{
+  width: 60px;
+}
+
+.emBaixo{
+  display: flex;
+  gap: 45px;
+  margin-top: 10px;
+}
+
+#jurosSimples input[type="text"], input[type="submit"],
+input[type="number"], select {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#jurosSimples input[id="tempo"]{
+  width: 30px;
+}
+
+.subDivTempo{
+  display: flex;
+  gap: 5px;
+}
+
+#anos, #meses, #dias {
+  width: 40px;
+}
+
+.submit{
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jurosSimples input[type="submit"] {
+  background-color: #06386e;
+  color: var(--color-off);
+  cursor: pointer;
+  width: 80px;
+}
+
+#resultadoJurosSimples {
+  font-weight: bold;
+}
+/* CSS DA SECTION JUROS SIMPLES */
+
+/* CSS DA SECTION JUROS COMPOSTO */
+#jurosComposto {
+  padding: 20px;
+  border: 2px solid var(--color-off);
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 150vh;
+}
+/* CSS DA SECTION JUROS COMPOSTO */
+
+/* CSS DA SECTION AMORTIZAÇÃO */
+#amortizacao {
+  padding: 20px;
+  border: 2px solid var(--color-off);
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 100vh;
+}
+/* CSS DA SECTION AMORTIZAÇÃO */
+
+/* CSS DO FOOTER */
+/* CSS DO FOOTER */

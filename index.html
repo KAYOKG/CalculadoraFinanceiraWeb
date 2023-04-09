@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora Financeira</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#jurosSimples"><h2>JUROS SIMPLES</h2></a></li>
+          <li><a href="#jurosComposto"><h2>JUROS COMPOSTO</h2></a></li>
+          <li><a href="#amortizacao"><h2>AMORTIZAÇÃO</h2></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="jurosSimples">
+        <!-- Conteúdo para Juros Simples -->
+        <fieldset>
+          <legend><h2>JUROS SIMPLES</h2></legend>
+          <form>
+            <div class="emCima">
+              <div class="divCapital">
+                <label for="CAPITAL">CAPITAL:</label>
+                <div class="subDivCapital">
+                  <input type="text" id="CAPITAL" name="CAPITAL" value="R$">
+                </div>
+              </div>
+              <div class="divTaxa">
+                <label for="taxa">Taxa de juros:</label>
+                <div class="subDivTaxa">
+                  <input type="text" id="taxa" name="taxa" placeholder="%">
+                  <select id="taxa" name="taxas">
+                    <option value="a.d.">a.d.</option>
+                    <option value="a.m.">a.m.</option>
+                    <option value="a.b.">a.b.</option>
+                    <option value="a.t.">a.t.</option>
+                    <option value="a.q.">a.q.</option>
+                    <option value="a.s.">a.s.</option>
+                    <option value="a.a.">a.a.</option>
+                  </select>
+                </div>
+              </div>
+              <p>Resultado do cálculo: <span id="resultadoJurosSimples"><br>R$ 00,00</span></p>
+            </div>
+            <div class="emBaixo">
+              <div class="divTempo">
+                <label for="tempo">Tempo:</label>
+                <div class="subDivTempo">
+                  <input type="number" id="tempo" name="tempo" placeholder="0" min="0">
+                  <input type="text" id="anos" name="anos" value="anos" readonly />
+                  <input type="number" id="tempo" name="tempo" placeholder="0" min="0">
+                  <input type="text" id="meses" name="meses" value="meses" readonly />
+                  <input type="number" id="tempo" name="tempo" placeholder="0" min="0">
+                  <input type="text" id="dias" name="dias" value="dias" readonly />
+                </div>
+              </div>
+              <div class="submit">
+                <input type="submit" value="Calcular">
+              </div>
+            </div>
+          </form>
+        </fieldset>
+      </section>
+      <section id="jurosComposto">
+        <!-- Conteúdo para Juros Composto -->
+        <fieldset>
+          <legend><h2>JUROS COMPOSTO</h2></legend>
+          <form>
+              <div class="divCapital">
+                  <label for="capital">Capital:</label>
+                  <input type="text" id="capital" name="capital" placeholder="R$" />
+              </div>
+              <div class="divTaxaJuros">
+                  <label for="taxaJuros">Taxa de juros:</label>
+                  <input type="text" id="taxaJuros" name="taxaJuros" placeholder="%" />
+              </div>
+              <div class="divTempoJuros">
+                  <label for="tempoJuros">Tempo:</label>
+                  <input type="number" id="tempoJuros" name="tempoJuros" placeholder="meses" min="0" />
+              </div>
+              <div class="divBtnCalcular">
+                  <button type="button" id="calcularJurosComposto">Calcular</button>
+              </div>
+              <p>Resultado do cálculo: <span id="resultadoJurosComposto">R$ 0,00</span></p>
+          </form>
+      </fieldset>
+      </section>
+      <section id="amortizacao">
+        <h2>AMORTIZAÇÃO</h2>
+        <!-- Conteúdo para Amortização -->
+      </section>
+    </main>
+    <footer>
+      <!-- <h3>Desenvolvido por: <a href="https://github.com/KAYOKG" target="_blank">Kayo Galdino</a> -->
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
